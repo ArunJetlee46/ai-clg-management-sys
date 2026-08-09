@@ -1,0 +1,14 @@
+flowchart LR
+  U[Users: Student/Faculty/Admin/Placement] --> P[Campus Operations Portal]
+  P --> O[Operational Services]
+  P --> A[Agent Orchestrator (LangGraph)]
+  O --> D[(PostgreSQL)]
+  A --> L[LLM Gateway: Groq/Gemini]
+  A --> F[Fallback LLM: Ollama]
+  A --> V[(Qdrant/Chroma)]
+  A --> K[(Neo4j)]
+  A --> C[(Redis + Celery)]
+  A --> T[Audit Trail Agent]
+  M[ML Services] --> D
+  M --> T
+  A --> N[Notification Channels]
