@@ -1,0 +1,7 @@
+erDiagram
+    users ||--o{ audit_logs : creates
+    users ||--o{ attendance_records : marks
+    students ||--o{ attendance_records : has
+    students ||--o{ performance_records : has
+    students ||--o{ placement_records : has
+    students ||--o{ dropout_risk_flags : has

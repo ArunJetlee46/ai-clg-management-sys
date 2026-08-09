@@ -1,0 +1,10 @@
+flowchart LR
+    UI[Frontend Dashboards] --> API[FastAPI Backend]
+    API --> PG[(PostgreSQL)]
+    API --> KG[(Neo4j)]
+    API --> VDB[(Qdrant)]
+    API --> REDIS[(Redis/Celery)]
+    API --> GRAPH[LangGraph Orchestrator]
+    GRAPH --> AGENTS[9 Domain Agents]
+    GRAPH --> LLM[Groq/Gemini/Ollama]
+    API --> ML[ML Serving]

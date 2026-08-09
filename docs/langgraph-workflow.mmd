@@ -1,0 +1,12 @@
+flowchart TD
+    START --> ATT[Attendance]
+    ATT --> ADV[Academic Advisor]
+    ADV --> FAC[Faculty Assistant]
+    FAC --> EXAM[Exam]
+    EXAM --> TT[Timetable]
+    TT --> ANA[Analytics]
+    ANA -->|high risk| DEBATE[Placement+Analytics Debate]
+    ANA -->|normal| NOTIF[Notification]
+    DEBATE --> AUDIT[Audit Trail]
+    NOTIF --> AUDIT
+    AUDIT --> END
