@@ -1,0 +1,8 @@
+app = "aegis-campus-api"
+
+[build]
+  dockerfile = "backend/Dockerfile"
+
+[[services]]
+  internal_port = 8000
+  protocol = "tcp"
