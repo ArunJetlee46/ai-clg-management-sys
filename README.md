@@ -37,7 +37,7 @@ npm run dev
 
 ## Migrations
 ```bash
-psql ******localhost:5432/aegis -f backend/migrations/001_init.sql
+psql postgresql://postgres@localhost:5432/aegis -f backend/migrations/001_init.sql
 ```
 
 ## Testing

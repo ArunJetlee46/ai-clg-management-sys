@@ -8,7 +8,7 @@ class Settings(BaseSettings):
     secret_key: str = "change_me"
     access_token_expire_minutes: int = 60
 
-    database_url: str = "******localhost:5432/aegis"
+    database_url: str = "sqlite:///./aegis.db"
     neo4j_uri: str = "bolt://localhost:7687"
     neo4j_user: str = "neo4j"
     neo4j_password: str = "neo4jpassword"
